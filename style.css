@@ -1,0 +1,114 @@
+/*
+  This is a CSS file. We write "rules" here to style our HTML elements.
+  A rule looks like this:
+  selector {
+      property: value;
+  }
+  The "selector" targets an HTML element (like 'body' or '.main-container').
+  The "property" is what you want to change (like 'background-color').
+  The "value" is the setting you want to use (like '#f4f7f6').
+*/
+
+/* --- General Page Style --- */
+body {
+    /* The font 'Poppins' we linked in the HTML. 'sans-serif' is a backup. */
+    font-family: 'Poppins', sans-serif;
+    /* A soft, calming off-white background color for the whole page. */
+    background-color: #f4f7f6; 
+    /* The default text color for the page. */
+    color: #333;
+    /* This combination centers our container vertically and horizontally. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make sure the body takes up the full screen height. */
+    margin: 0; /* Remove default browser margin. */
+}
+
+/* --- Main App Container --- */
+.main-container {
+    background-color: #ffffff; /* A clean white background for the content box. */
+    padding: 30px 40px;      /* Adds space inside the box (30px top/bottom, 40px left/right). */
+    border-radius: 16px;       /* Rounds the corners of the box. */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* A soft shadow to make it "lift off" the page. */
+    text-align: center;      /* Center all the text inside the container. */
+    max-width: 550px;          /* Makes sure the box doesn't get too wide on big screens. */
+    width: 90%;              /* Takes up 90% of the screen width on smaller screens. */
+    transition: all 0.3s ease; /* Smoothly animates any changes to the container. */
+}
+
+/* --- Header Text Styling --- */
+.app-header h1 {
+    font-weight: 600; /* Makes the main title bolder. */
+    color: #2c3e50;   /* A dark, professional blue-gray color. */
+    margin-bottom: 8px; /* A little space below the title. */
+}
+
+.app-header p {
+    color: #7f8c8d; /* A softer gray for the subtitle. */
+    margin-bottom: 30px; /* More space below the subtitle to separate it. */
+    font-weight: 300; /* A lighter font weight. */
+}
+
+/* --- The Text Box --- */
+#feeling-input {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #dcdfe2;
+    font-family: 'Poppins', sans-serif; /* Make sure it uses our nice font. */
+    font-size: 16px;
+    line-height: 1.5;
+    resize: none; /* Prevents user from resizing it. */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* IMPORTANT: Ensures padding is inside the width. */
+    transition: all 0.3s ease; /* Smooth transition for the border color. */
+}
+
+/* Style for when the user clicks into the text box. */
+#feeling-input:focus {
+    outline: none; /* Remove the default ugly outline. */
+    border-color: #5b9bd5; /* A pleasant blue border. */
+    box-shadow: 0 0 8px rgba(91, 155, 213, 0.4); /* A soft blue glow. */
+}
+
+/* --- The Button --- */
+#submit-button {
+    background: linear-gradient(45deg, #5b9bd5, #4e8dcb); /* A nice gradient background. */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer; /* The mouse cursor becomes a hand. */
+    width: 100%; /* Make the button full-width. */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for when the user hovers over the button. */
+#submit-button:hover {
+    transform: translateY(-2px); /* Lifts the button up slightly. */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* A stronger shadow to enhance the "lift". */
+}
+
+/* --- Results Area Styling (for later) --- */
+.results-area {
+    margin-top: 30px;
+    text-align: left; /* We'll align the results to the left for readability. */
+    font-size: 17px;
+    line-height: 1.7;
+    color: #34495e; /* A different shade of dark blue-gray. */
+}
+/* --- Affirmation Item Styling --- */
+.affirmation-item {
+    background-color: #eaf2f8; /* A very light, calm blue background */
+    border-left: 4px solid #5b9bd5; /* A solid blue line on the left */
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 12px; /* Space between each item */
+    font-weight: 300;
+    text-align: center;
+}

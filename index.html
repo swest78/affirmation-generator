@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is the "brain" of our webpage. It holds information for the browser. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affirmation Generator | Find Your Strength</title>
+
+    <!-- This line tells our HTML file that we WILL use a CSS file for styling.
+         It won't do anything yet, but it's getting us ready for the next step. -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- We can even link to a special font from Google to make it look nicer. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- This is the visible part of our webpage. -->
+
+    <div class="main-container">
+
+        <!-- A header area for our title and a welcoming message. -->
+        <header class="app-header">
+            <h1>Welcome, Friend</h1>
+            <p>Tell me how you're feeling, and I'll find some words of support for you.</p>
+        </header>
+
+        <!-- The main area where the user interacts with the app. -->
+        <div class="input-area">
+            <textarea id="feeling-input" placeholder="For example: I'm feeling stressed about my presentation..."></textarea>
+            <button id="submit-button">Receive Affirmations</button>
+        </div>
+
+        <!-- The area where the affirmations will appear. It's empty for now. -->
+        <div class="results-area" id="affirmation-container">
+            <!-- Our JavaScript will add affirmations in here later! -->
+        </div>
+
+    </div>
+
+    <!-- This line links our JavaScript file. We put it at the end so the whole
+         page loads first, which is best practice. -->
+    <script src="script.js"></script>
+</body>
+</html>
