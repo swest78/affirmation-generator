@@ -112,3 +112,67 @@ body {
     font-weight: 300;
     text-align: center;
 }
+/* === NEWSLETTER SIGNUP STYLES === */
+
+.newsletter-signup {
+    margin-top: 60px; /* Add significant space above this section */
+    padding-top: 40px; /* Space inside, between the border and the text */
+    border-top: 1px solid #e0e0e0; /* A faint line to separate it from the results */
+    text-align: center;
+}
+
+.newsletter-signup h2 {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.newsletter-signup p {
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+/* This is the container for the input field and the button */
+.form-group {
+    display: flex; /* This is key: it puts the input and button side-by-side */
+    max-width: 450px;
+    margin: 0 auto; /* Centers the form group horizontally */
+}
+
+/* Style for the email input field */
+.form-group input.email {
+    width: 100%; /* Take up all available space */
+    padding: 15px;
+    border: 1px solid #dcdfe2;
+    border-radius: 12px 0 0 12px; /* Round the left corners, but not the right */
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-right: none; /* Remove the border where it meets the button */
+    transition: all 0.3s ease;
+}
+
+.form-group input.email:focus {
+    outline: none;
+    border-color: #5b9bd5;
+    box-shadow: 0 0 8px rgba(91, 155, 213, 0.4);
+}
+
+/* Style for the subscribe button */
+.form-group button.button {
+    padding: 15px 25px;
+    border: none;
+    background: linear-gradient(45deg, #1abc9c, #16a085); /* A nice green gradient */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0 12px 12px 0; /* Round the right corners, but not the left */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Prevents the text from wrapping */
+}
+
+.form-group button.button:hover {
+    background: linear-gradient(45deg, #2ecc71, #27ae60);
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
