@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function getAffirmations() {
         
         // --- !!! YOUR N8N WEBHOOK URL SHOULD BE HERE !!! ---
-        const webhookUrl = 'http://localhost:5678/webhook/e01ed9a7-8f13-4659-807b-7bd3b2697795'; // Make sure your URL is still here!
+        const webhookUrl = 'https://cwest.app.n8n.cloud/webhook-test/e01ed9a7-8f13-4659-807b-7bd3b2697795; // Make sure your URL is still here!
 
         const userFeeling = feelingInput.value;
 
